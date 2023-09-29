@@ -173,7 +173,6 @@
 
  /* about me*/
  .about {
-  height: 80vh;
     background: #004346;
     background-size: cover;
     background-position: center;
@@ -301,7 +300,6 @@
  /* skills */
 
 .skills {
-  height: 70vh;
   background: #84a98c;
   background-size: cover;
   background-position: center;
@@ -359,7 +357,6 @@
 
   /* portfolio */
   .portfolio {
-    height: 70vh;
     background: #cad2c5;
     background-size: cover;
     background-position: center;
