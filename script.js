@@ -23,32 +23,3 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-function sendEmail() {
-  Email.send({
-    Host: "smtp.elasticemail.com",
-    Username: "fong_vanessa@hotmail.com",
-    Password: "6F916BAD45A393C0E5EBF9102AD6C585BC78",
-    To: "fong_vanessa@hotmail.com",
-    From: document.getElementById("email").value,
-    Subject: "New Contact Form Enquiry",
-    Body:
-      "Name: " + document.getElementById("name").value +
-      "<br> Email: " + document.getElementById("email").value +
-      "<br> Phone: " + document.getElementById("phone").value +
-      "<br> Message: " + document.getElementById("message").value
-  })
-    .then(
-      (message) => {
-        alert("Message sent successfully");
-        document.getElementById("name").value = "";
-        document.getElementById("email").value = "";
-        document.getElementById("phone").value = "";
-        document.getElementById("message").value = "";
-        return false;
-      },
-      (error) => {
-        alert("Error: " + error);
-        return false;
-      }
-    );
-}
